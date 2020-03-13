@@ -1,11 +1,11 @@
 ﻿#include<iostream>
-#include"Field.h"
+#include"ChessBoard.h"
 using namespace std;
 int main()
 {
-	Field field(6);
+	ChessBoard board(6);
 	for (int i = 1; i < 4; i++)
-		field.Cut(0, i);
+		board.Cut(0, i);
 
 
 
