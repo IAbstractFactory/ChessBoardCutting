@@ -5,6 +5,8 @@ class ChessBoard
 	char** arr;
 	int Size;
 	int count = 0;
+	
+	
 public:
 	long HowMuch = 0;
 	ChessBoard(int size)
@@ -55,7 +57,6 @@ public:
 			if (i + 1 < Size - 1 && arr[i + 1][j] == '*')Cut(i + 1, j);
 			if (i - 1 > 0 && arr[i - 1][j] == '*')Cut(i - 1, j);
 			if (j + 1 < Size - 1 && i != 0 && arr[i][j + 1] == '*')Cut(i, j + 1);
-			//if (!(count == 2 && j == (Size - 1) / 2))
 			if (j - 1 > 0 && i != 0 && arr[i][j - 1] == '*')Cut(i, j - 1);
 
 		}
